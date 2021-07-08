@@ -6,42 +6,42 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Table(name="pizza_product")
+ * @ORM\Table(name="product")
  * @ORM\Entity()
  */
-
 class Product
 {
-
     /**
      * @var int|null
-     * @ORM\Column(name"id", type="integer")
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id()
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
     /**
      * @var string|null
-     * @ORM\Column(name"image_path", type="string", length=255)
+     * @ORM\Column(name="image_path", type="string", length=255)
      */
     private $image;
     /**
      * @var string|null
-     * @ORM\Column(name"name", type="string", length=100)
+     * @ORM\Column(name="name", type="string", length=100)
      */
     private $name;
     /**
      * @var string|null
-     * @ORM\Column(name"$description", type="string", length=255)
+     * @ORM\Column(name="description", type="string", length=255)
      */
     private $description;
     /**
      * @var integer|null
-     * @ORM\Column(name"$price", type="integer")
+     * @ORM\Column(name="price", type="integer")
      */
     private $price;
     /**
      * @var integer|null
-     * @ORM\Column(name"weight", type="integer")
+     * @ORM\Column(name="weight", type="integer")
      */
     private $weight;
 
